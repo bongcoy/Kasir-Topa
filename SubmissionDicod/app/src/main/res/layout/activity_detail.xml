@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".DetailActivity">
+
+<!--        Makanan-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <ImageView
+                android:id="@+id/iv_item_photo_detail"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginEnd="16dp"
+                tools:src="@tools:sample/avatars" />
+            <LinearLayout
+                android:layout_toEndOf="@+id/iv_item_photo_detail"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_detail_item_name"
+                    style="@style/Content.Title"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    tools:text="@string/item_name"/>
+                <TextView
+                    android:id="@+id/tv_item_category"
+                    style="@style/Content.Title"
+                    tools:text="@string/item_detail_category"/>
+                <TextView
+                    android:id="@+id/tv_item_stock"
+                    style="@style/Content.Title"
+                    tools:text="@string/item_stock"/>
+                <TextView
+                    android:id="@+id/tv_item_price"
+                    style="@style/Content.Title"
+                    tools:text="@string/item_detail_price"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+<!--        Bahan-->
+        <TextView
+            style="@style/Content.Title"
+            android:textStyle="bold"
+            android:text="@string/bahan"/>
+        <TextView
+            android:id="@+id/tv_item_material"
+            style="@style/Content"
+            tools:text="@string/isi_bahan_makanan"/>
+
+<!--        Deskripsi-->
+        <TextView
+            style="@style/Content.Title"
+            android:textStyle="bold"
+            android:text="@string/deskripsi"/>
+        <TextView
+            android:id="@+id/tv_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Keterangan"/>
+    </LinearLayout>
+
+</ScrollView>

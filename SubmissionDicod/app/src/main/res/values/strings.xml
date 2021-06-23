@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Kasir Top a Soup</string>
+
+    <string name="item_name">Nama Makanan Panjang</string>
+    <string name="item_category">Kategori</string>
+    <string name="item_price">Rp100.000</string>
+
+    <string name="item_detail_category">Kategori : </string>
+    <string name="item_stock">Stok : </string>
+
+    <string name="profile_name">Muhammad Pascal Dewantara</string>
+    <string name="profile_email">mpascaldewantara@gmail.com</string>
+    <string name="bahan">Bahan (porsi)</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="isi_bahan_makanan">Bahan Makanan</string>
+    <string name="item_detail_price">Harga Jual :</string>
+</resources>
